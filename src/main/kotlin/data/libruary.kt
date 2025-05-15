@@ -28,7 +28,13 @@ class Libruary(_had : MutableList<Book> = mutableListOf<Book>()) {
         return null;
     }
 
+    fun findByAuthor(author: String): Book? {
+        for ( i in 0..had.size) {
+            if (had[i].author == author) {
+                return had[i];
             }
         }
+        return null;
     }
+
 }
