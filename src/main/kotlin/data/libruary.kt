@@ -37,4 +37,16 @@ class Libruary(_had : MutableList<Book> = mutableListOf<Book>()) {
         return null;
     }
 
+    fun findByGenere(geners: Geners): MutableList<Book>? {
+        val res: MutableList<Book> = mutableListOf<Book>();
+        for (i in had){
+            if (i.genere == geners){
+                res.add(i);
+            }
+        }
+        if (res.size == 0){
+            return null;
+        }
+        return res;
+    }
 }
