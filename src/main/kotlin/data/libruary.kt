@@ -3,7 +3,7 @@ package org.exampl.data
 import org.exampl.data.Book
 import java.time.LocalDate
 
-class Libruary(_had : MutableList<Book>? = null) {
+class Libruary(_had : MutableList<Book> = mutableListOf<Book>()) {
 
     private val had = _had;
 
