@@ -19,8 +19,13 @@ class Libruary(_had : MutableList<Book> = mutableListOf<Book>()) {
         }
     }
 
+    fun findByTitle(title: String): Book? {
+        had.forEach {item ->
+            if (item.title == title) {
+                return item;
             }
         }
+        return null;
     }
 
             }
